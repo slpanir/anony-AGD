@@ -505,7 +505,7 @@ class SimpleMLP(nn.Module):
         super(SimpleMLP, self).__init__()
         self.fc1 = nn.Linear(input_dim, hidden_dim)
         self.relu = nn.ReLU()
-        self.fc2 = nn.Linear(hidden_dim, 2)  # 二分类：helpful / harmless
+        self.fc2 = nn.Linear(hidden_dim, 2)  
 
     def forward(self, x):
         x = self.fc1(x)
