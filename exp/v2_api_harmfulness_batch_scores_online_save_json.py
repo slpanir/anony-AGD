@@ -403,7 +403,7 @@ def main():
     answers = answers[:partial]
 
     
-    errors = auto_judge_gpt_4("gpt-4o", texts, answers=answers, output_file=output_file, batch_size=5)
+    errors = auto_judge_gpt_4("gpt-4", texts, answers=answers, output_file=output_file, batch_size=5)
 
    
     # offline_check_and_update(output_file, batch_size=5)
